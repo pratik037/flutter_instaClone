@@ -87,8 +87,68 @@ class InstaList extends StatelessWidget {
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 16),
-                  child: Text(
-                    "Liked By pratik037,ayushshekhar17 and 25,010 others"),
+                  child: Row(
+                    children: <Widget>[
+                      Text(
+                        "Liked By"
+                      ),
+                      Text(" pratik037,ayushshekhar17",style: TextStyle(fontWeight: FontWeight.bold)),
+                      Text(" and"),
+                      Text(" 25,010 others", style: TextStyle(fontWeight: FontWeight.bold))
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                  child: Row(
+                          // mainAxisAlignment: MainAxisAlignment.start,
+                          children: <Widget>[
+                            Text("pratik037", style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 15
+                            ),),
+                            SizedBox(width: 5),
+                            Text("My reaction on seeing the instagram clone")
+                          ],
+                        ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
+                  child: Text("View All 1000 Comments", style: TextStyle(
+                    color: Colors.grey,
+                  )),
+                ),
+
+                Padding(
+                  padding: EdgeInsets.fromLTRB(16, 8, 0, 5),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
+                      Container(
+                        height: 40,
+                        width: 40,
+                        decoration: new BoxDecoration(
+                          shape: BoxShape.circle,
+                          image: DecorationImage(
+                            fit: BoxFit.fill,
+                            image: NetworkImage("https://pbs.twimg.com/media/Dh-nnbPUYAAGcQ_.jpg")
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 10,),
+                      Expanded(
+                        child: TextField(
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: "Add a comment..."
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16),
+                  child: Text("10 days ago", style: TextStyle(color: Colors.grey, fontSize: 13 ) ),
                 )
               ],
             ),
