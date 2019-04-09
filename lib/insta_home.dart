@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_clone/insta_body.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class InstaHome extends StatelessWidget {
 
@@ -41,7 +42,7 @@ class InstaHome extends StatelessWidget {
                 onPressed: (){},
               ),
                IconButton(
-                icon: Icon(Icons.add_circle_outline,size: 35,),
+                icon: Icon(FontAwesomeIcons.plusSquare,size: 30,),
                 onPressed: (){},
               ),
                IconButton(

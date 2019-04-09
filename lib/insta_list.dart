@@ -66,6 +66,8 @@ class InstaList extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
+                      Row(
+                      children:  <Widget>[
                       Icon(
                         FontAwesomeIcons.heart
                       ),
@@ -78,8 +80,15 @@ class InstaList extends StatelessWidget {
                         FontAwesomeIcons.paperPlane
                       ),
                     ],
+                      ),
+                      Icon(FontAwesomeIcons.bookmark),
+                    ],
                   ),
-                  Icon(FontAwesomeIcons.bookmark),
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16),
+                  child: Text(
+                    "Liked By pratik037,ayushshekhar17 and 25,010 others"),
                 )
               ],
             ),
