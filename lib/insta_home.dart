@@ -5,9 +5,9 @@ class InstaHome extends StatelessWidget {
 
   final topBar = new AppBar(
     backgroundColor: new Color(0xfff8faf8),
-    centerTitle: true,
+    // centerTitle: true,
     elevation: 1.0,
-    leading: new Icon(Icons.camera_alt),
+    leading: new Icon(Icons.camera_alt,),
     title: SizedBox(
       height: 35.0,
       child: Image.asset("assets/images/insta_logo.png"),
@@ -32,24 +32,29 @@ class InstaHome extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              new IconButton(
-                icon: Icon(Icons.home),
+               IconButton(
+                icon: Icon(Icons.home, size: 35,),
                 onPressed: (){},
               ),
-              new IconButton(
-                icon: Icon(Icons.search),
+               IconButton(
+                icon: Icon(Icons.search, size: 35,),
                 onPressed: (){},
               ),
-              new IconButton(
-                icon: Icon(Icons.add_box),
+               IconButton(
+                icon: Icon(Icons.add_circle_outline,size: 35,),
                 onPressed: (){},
               ),
-              new IconButton(
-                icon: Icon(Icons.favorite),
+               IconButton(
+                icon: Icon(Icons.favorite_border),
                 onPressed: (){},
               ),
-              new IconButton(
-                icon: Icon(Icons.account_circle),
+               IconButton(
+                icon: Container(
+                  child: CircleAvatar(
+                    radius: 15,
+                    backgroundImage: NetworkImage("https://pbs.twimg.com/media/Dh-nnbPUYAAGcQ_.jpg"),
+                  ),
+                ),
                 onPressed: (){},
               ),
             ],
